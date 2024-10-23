@@ -15,7 +15,7 @@ Apoyate en los siguientes recursos para realizar la práctica:
 - **Módulo:** Programación
 - **Unidad de Trabajo:** UD 2 - Sentencias iterativas
 - **Fecha de Creación:** 17/10/2024
-- **Fecha de Entrega:** [Fecha de entrega]
+- **Fecha de Entrega:** 23/10/2024
 - **Alumno(s):** 
   - **Nombre y Apellidos:** Óscar García Jaén
   - **Correo electrónico:** ogarjae565@g.educaand.es
