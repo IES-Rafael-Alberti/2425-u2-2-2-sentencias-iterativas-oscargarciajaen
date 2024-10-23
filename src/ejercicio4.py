@@ -4,9 +4,10 @@ Escribe un programa que pida al usuario un numero entero positivo y muestre por 
 
 def entrada():
     numero = int(input("Introduce un número entero positivo: "))
-    if numero <= 0:
-        print("El número no es un entero positivo.")
-    return numero
+    if numero > 0:
+        return numero
+    else:
+        raise ValueError("El número introducido no es entero positivo")
 
 def muestra(numero):
     solucion = ""

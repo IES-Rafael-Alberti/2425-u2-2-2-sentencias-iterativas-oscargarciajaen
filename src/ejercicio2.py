@@ -4,8 +4,11 @@ Escribir un programa que pregunte al usuario su edad y muestre por pantalla todo
 
 
 def entrada():
-    edad = int(input("Introduce tu edad: ")) 
-    return edad
+    edad = int(input("Introduce tu edad: "))
+    if edad > 0:
+        return edad
+    else: 
+        raise ValueError("La edad introducida es 0 o menor")
 
 def cadena(edad):
     solucion = ""

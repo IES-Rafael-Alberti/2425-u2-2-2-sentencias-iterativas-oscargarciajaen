@@ -2,6 +2,8 @@
 
 def entrada():
     numero = int(input("Introduce un número entero: "))
+    if numero <= 0:
+        raise ValueError("El numero entero es negativo")
     return numero
 
 def primo_o_no(numero):

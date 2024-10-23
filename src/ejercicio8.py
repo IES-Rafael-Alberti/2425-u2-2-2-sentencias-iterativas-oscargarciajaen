@@ -4,12 +4,19 @@ Escribir un programa que pida al usuario un número entero y muestre por pantall
 
 def entrada():
     numero = int(input("Introduce un número entero positivo: "))
-    return numero
+    if numero > 0:
+        return numero
+    else:
+        raise ValueError("El número introducido no es entero positivo")
 
 def triangulo(numero):
     mensaje = []
-    for i in range(1, numero + 1,1):
-        mensaje.append(str(numero) * i) 
+    for i in range(1, numero + 1,2):
+        mensaje_2 = []
+        for x in range(i, 0, -2):
+            mensaje_2.append(str(x))
+        mensaje.append(" ".join(mensaje_2))
+
     return "\n".join(mensaje)
 
 def main():

@@ -4,7 +4,10 @@ Escribir un programa que le pida al usuario una palabra y lo muestre por pantall
 
 def entrada():
     palabra = input("Introduce una palabra: ")
-    return palabra
+    if palabra.isalpha():
+        return palabra 
+    else:
+        raise ValueError("El valor introducido no es una palabra")
 
 def bucle(palabra): 
     solucion = ""

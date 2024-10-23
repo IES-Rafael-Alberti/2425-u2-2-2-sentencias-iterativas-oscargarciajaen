@@ -4,7 +4,10 @@ Escribir un programa que muestre el eco de todo lo que el usuario introduzca has
 
 def entrada():
     palabra = input("Introduce una palabra (escribe'salir' para terminar): ")
-    return palabra
+    if palabra.isalpha():
+        return palabra 
+    else:
+        raise ValueError("El valor introducido no es una palabra")
 
 def eco(palabra):
     while palabra != "salir":

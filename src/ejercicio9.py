@@ -4,7 +4,10 @@ Escribir un programa que almacene la cadena de caracteres contraseña en una var
 
 def entrada():
     entrada = input("Introduce la contraseña: ")
-    return entrada
+    if entrada.isalpha():
+        return entrada 
+    else:
+        raise ValueError("El valor introducido no es una palabra")
 
 def comprobación_de_contraseña(entrada):
     contrasena = "contraseña"  

@@ -4,6 +4,8 @@ Escribir un programa en el que se pregunte al usuario por una frase y una letra,
 def entrada():
     frase = input("Introduce una frase: ")
     letra = input("Introduce una letra: ")
+    if len(letra) != 1 or not letra.isalpha():
+        raise ValueError("No ha introducido una letra")
     return frase,letra
 
 def numero_letras(frase, letra):

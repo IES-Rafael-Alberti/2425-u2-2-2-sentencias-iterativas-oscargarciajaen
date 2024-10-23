@@ -4,7 +4,10 @@ Escribir un programa que pida al usuario una palabra y luego muestre por pantall
 
 def entrada():
     palabra = input("Introduce una plabra: ")
-    return palabra
+    if palabra.isalpha():
+        return palabra 
+    else:
+        raise ValueError("El valor introducido no es una palabra")
 
 def deletreo(palabra):
     mensaje = []

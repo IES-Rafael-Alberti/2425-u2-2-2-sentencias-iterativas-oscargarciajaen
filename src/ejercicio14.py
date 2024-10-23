@@ -4,7 +4,10 @@ Leer números enteros de teclado, hasta que el usuario ingrese el 0. Finalmente,
 
 def entrada():
     numero = int(input("Introduce un numero (escribe'0' para terminar): "))
-    return numero
+    if numero >= 0:
+        return numero
+    else:
+        raise ValueError("El número introducido no es entero positivo o 0")
 
 def suma(numero):
     suma = 0
